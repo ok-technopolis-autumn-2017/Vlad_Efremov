@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FirstHomeTask</title>
+</head>
+<body>
+<div class="main-wrapper">
+    <div class="todos-header">
+        <h1 class="todos-title">Todos</h1>
+    </div>
+    <div class="todos-main">
+        <div class="todos-add">
+            <button class="todo-add_select-all" aria-label="Отметить все как выполненнные"></button>
+            <input class="todo-add_input" placeholder="Добавить" aria-label="Поле добавления todo">
+        </div>
+
+        <div class="todos-list">
+            <div class="todo-item __ready">
+				<textarea class="todo-item_text">
+				html
+			    </textarea>
+                <input type="checkbox" checked="checked" class="todo-item_ready-mark" aria-label="Пометить как выполненное">
+                <button class="todo-item_remove" aria-label="Удалить todo"></button>
+            </div>
+            <div class="todo-item __ready">
+				<textarea class="todo-item_text">
+				css
+			    </textarea>
+                <input type="checkbox" checked="checked" class="todo-item_ready-mark" aria-label="Пометить как выполненное">
+                <button class="todo-item_remove" aria-label="Удалить todo"></button>
+            </div>
+            <div class="todo-item __ready">
+				<textarea class="todo-item_text">
+				js
+			    </textarea>
+                <input type="checkbox" checked="checked" class="todo-item_ready-mark" aria-label="Пометить как выполненное">
+                <button class="todo-item_remove" aria-label="Удалить todo"></button>
+            </div>
+            <div class="todo-item">
+				<textarea class="todo-item_text">
+				js tools
+			    </textarea>
+                <input type="checkbox" checked="checked" class="todo-item_ready-mark" aria-label="Пометить как выполненное">
+                <button class="todo-item_remove" aria-label="Удалить todo"></button>
+            </div>
+        </div>
+        <div class="todos-actions-bar">
+            <div class="todos-actions-bar_counter" aria-label="Количество несделанных todo"> n todo</div>
+            <div class="todo-filters">
+                <button class="todos-filter __active" data-filter="all" aria-label="Фильтр: показать все">
+                    Все
+                </button>
+                <button class="todos-filter" data-filter="ready" aria-label="Фильтр: показать невыполненные">
+                    Невыполненные
+                </button>
+                <button class="todos-filter __active" data-filter="unready" aria-label="Фильтр: показать выполненные">
+                    Выполненные
+                </button>
+
+            </div>
+            <button class="todos-actions-bar_clear-completed">
+                Удалить завершенные
+            </button>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
