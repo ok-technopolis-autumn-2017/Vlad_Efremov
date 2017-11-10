@@ -1,0 +1,8 @@
+.todos-title{
+    font-family:"Helvetica Neue",Arial, sans-serif;
+    font-size: 86px;
+    font-weight: 100;
+    color: rgba(175, 47, 47, .15);
+    text-align: center;
+    text-transform: lowercase;
+    }

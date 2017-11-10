@@ -1,0 +1,27 @@
+.todos-actions-bar{
+    overflow: auto;
+    }
+.todos-actions-bar *{
+    margin:10px 0 10px 5px;
+    }
+.todos-actions-bar_counter{
+    background-color: #FFFFFF;
+    border: none;
+    color: #BEBEBE;
+    float: left;
+    width: 15%;
+    }
+.todos-filters{
+    width: 50%;
+    margin: 0 auto;
+    float: left;
+
+    }
+
+.todos-actions-bar_clear-completed{
+    display: block;
+    width: 30%;
+    float: right;
+
+    }
+

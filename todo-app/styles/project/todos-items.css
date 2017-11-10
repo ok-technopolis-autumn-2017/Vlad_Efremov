@@ -1,0 +1,55 @@
+
+.todos-item{
+    height: 60px;
+    border-top: 1px solid #e5e5e5;
+    position: relative;
+    clear:both;
+    }
+.todos-item:hover{
+    background-color: #fafafa;
+    }
+.todos-item:last-child {
+    border-bottom: 1px solid #e5e5e5 ;
+    }
+
+
+.todos-item_text {
+
+    overflow: hidden;
+    outline: none;
+    line-height: 30px;
+    background: none;
+    margin-top: 14px;
+    font-size: 24px;
+    height: 30px;
+    border: 0;
+    resize: none;
+    color: #747474;
+    position: absolute;
+    }
+
+.todos-item_ready-mark {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: relative;
+    border-radius: 50px;
+    border: 1px solid #6CC8B6;
+    margin: auto 5px;
+    float: left;
+    }
+
+
+.todos-item_remove {
+    width: 42px;
+    height: 60px;
+    background: #fff;
+    float: right;
+    }
+
+
+.todos-item_close_icon {
+    background: url("../../icons/close.png");
+    width: 18px;
+    height: 18px;
+    }
