@@ -1,0 +1,53 @@
+@import "../config/global";
+.todos-item{
+    height: 60px;
+    border-top: 1px solid $item_border-color;
+    position: relative;
+    clear:both;
+    }
+.todos-item:hover{
+    background-color: $item_hover_bg-color;
+    }
+.todos-item:last-child {
+    border-bottom: 1px solid $item_border-color ;
+    }
+
+
+.todos-item_text {
+
+    overflow: hidden;
+    outline: none;
+    line-height: $lh-normal;
+    background: none;
+    margin-top: $offset;
+    font-size: $fs_normal;
+    font-style:normal;
+    height: 30px;
+    border: 0;
+    resize: none;
+    color: $item_font-color;
+    padding-left:$offset;
+    position: absolute;
+    }
+
+.todos-item_ready-mark {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: relative;
+    border-radius: 50px;
+    border: 1px solid $item_mark_border-color;
+    margin: auto $offset_half;
+    float: left;
+    }
+
+
+.todos-item_remove {
+    width: 42px;
+    height: 60px;
+    background:none;
+    float: right;
+    }
+
+
+

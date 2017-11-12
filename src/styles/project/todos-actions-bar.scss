@@ -1,0 +1,28 @@
+@import "../config/global";
+.todos-actions-bar{
+    overflow: auto;
+    }
+.todos-actions-bar *{
+    margin:$offset 0 $offset $offset_half;
+    }
+.todos-actions-bar_counter{
+    background-color: $c-white;
+    border: none;
+    color: $btn_font-color;
+    float: left;
+    width: 15%;
+    }
+.todos-filters{
+    width: 50%;
+    margin: 0 auto;
+    float: left;
+
+    }
+
+.todos-actions-bar_clear-completed{
+    display: block;
+    width: 30%;
+    float: right;
+
+    }
+

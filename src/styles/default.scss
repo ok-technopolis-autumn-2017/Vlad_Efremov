@@ -1,0 +1,17 @@
+@import "config/global.scss";
+body, input, button, textarea, h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 14px;
+    }
+
+body {
+    background:$bg_color;
+    }
+
+.main-wrapper{
+    font-family: $c-font;
+    font-weight:$c-font-weight;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    }
