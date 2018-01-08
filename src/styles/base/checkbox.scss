@@ -1,9 +1,7 @@
 @import "../config/global";
 .input-checkbox{
-    position: relative;
     width: 40px;
     height: 40px;
-    float: left;
     top:15%;
     margin-left: $offset_half;
     }
@@ -35,8 +33,8 @@
     -ms-transform: rotate(40deg);
     -o-transform: rotate(40deg);
     transform: rotate(40deg);
-    bottom: 24%;
-    left: 13%;
+    bottom: 10px;
+    left: 5px;
     background: $checkbox_border-color;
 
     }
@@ -50,7 +48,7 @@
     -ms-transform: rotate(125deg);
     -o-transform: rotate(125deg);
     transform: rotate(125deg);
-    bottom: 39%;
-    left: 30%;
+    bottom: 16px;
+    left: 12px;
     background: $checkbox_border-color;
     }
