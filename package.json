@@ -1,21 +1,21 @@
 {
-  "name": "preprocessor-stub",
+  "name": "vlad_efremov",
   "version": "0.0.1",
   "description": "Stub for setting up preprocessor",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp build",
-    "watch": "gulp watch",
-    "start": "gulp"
+    "build": "babel src -d public/dist --presets es2015"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/ok-technopolis/preprocessor-stub.git"
   },
-  "author": "",
+  "author": "Vlad Efremov",
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-css-rebase-urls": "0.0.5",
