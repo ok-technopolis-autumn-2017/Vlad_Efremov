@@ -1,4 +1,4 @@
-var TODOS_MAIN_SELECTOR = '.js-todos-main';
+var TODOS_MAIN_SELECTOR = '.todos-actions-bar';
 var FULL_INTERFACE_MODIFICATOR = '__has-todos';
 
 function TodoMainConstructor() {

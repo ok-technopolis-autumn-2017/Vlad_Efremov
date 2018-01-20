@@ -29,7 +29,7 @@ var todoListConstructorPrototype = TodoListConstructor.prototype;
 /**
  * @return {Number}
  */
-todoListConstructorPrototype.getItemsCount =function () {
+todoListConstructorPrototype.getItemsCount = function () {
     return this._items.length;
 };
 
@@ -38,22 +38,26 @@ todoListConstructorPrototype.getItemsCount =function () {
  * @return {TodoListConstructor}
  */
 todoListConstructorPrototype.createItem = function (todoItemData) {
-    var item = new TodoItem(Object.assign(
-        {
-            id: itemsIdIterator++,
-        },
-        todoItemData
-    ));
 
-    this._items.push(item);
+    if (todoItemData.text.replace(/\s/g, '')!== '') {
 
-    item.on('change', this._onItemChange, this)
-        .on('remove', this._onItemRemove, this)
-        .render(this._todosList);
+        var item = new TodoItem(Object.assign(
+            {
+                id: itemsIdIterator++,
+            },
+            todoItemData
+        ));
 
-    this.trigger('itemAdd', item);
+        this._items.push(item);
 
-    return this;
+        item.on('change', this._onItemChange, this)
+            .on('remove', this._onItemRemove, this)
+            .render(this._todosList);
+
+        this.trigger('itemAdd', item);
+
+        return this;
+    }
 };
 
 /**
@@ -63,7 +67,7 @@ todoListConstructorPrototype.removeCompletedItems = function () {
     var items = this._items;
     var i = items.length;
 
-    for (; i-- ;) {
+    for (; i--;) {
         if (items[i].model.isReady) {
             items[i].remove();
         }
@@ -80,7 +84,7 @@ todoListConstructorPrototype.removeCompletedItems = function () {
 todoListConstructorPrototype._getItemById = function (itemId) {
     var items = this._items;
 
-    for (var i = items.length; i-- ;) {
+    for (var i = items.length; i--;) {
         if (items[i].model.id === itemId) {
             return items[i];
         }
@@ -137,14 +141,14 @@ todoListConstructorPrototype.filterShowedItems = function (filterId) {
                 item.show();
                 break;
             case 'ready':
-                if (item.model.isReady) {
+                if (!item.model.isReady) {
                     item.show();
                 } else {
                     item.hide();
                 }
                 break;
             case 'unready':
-                if (!item.model.isReady) {
+                if (item.model.isReady) {
                     item.show();
                 } else {
                     item.hide();

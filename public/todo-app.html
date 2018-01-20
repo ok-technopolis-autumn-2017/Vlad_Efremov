@@ -8,7 +8,7 @@
 </head>
 <script type="text/html" id="todoItemTemplate">
     <div class="todos-item">
-        <div class="todos-item_ready-mark input-checkbox todo-item_ready-checker">
+        <div class="todos-item_ready-mark input-checkbox">
             <input type="checkbox" class="input-checkbox_target js-todo-item_mark-ready"></input>
             <div class="input-checkbox_visual"></div>
         </div>
@@ -24,7 +24,7 @@
     <div class="todos-header">
         <h1 class="todos-title">Todos</h1>
     </div>
-    <div class="todos-main js-todos-main">
+    <div class="todos-main js-todos-main __has-todos">
         <div class="todos-add">
             <button class="todos-add_select-all js-todos-select-all" aria-label="Отметить все как выполненнные" onclick="che">
                 <div class="todos-add_select-all_icon"></div>
@@ -38,19 +38,19 @@
         <div class="todos-list js-todos-list">
 
         </div>
-        <div class="todos-actions-bar js-todos-actions-bar_counter">
-            <div class="todos-actions-bar_counter" aria-label="Количество несделанных todo"> n todo</div>
-            <button class="todos-actions-bar_clear-completed">
+        <div class="todos-actions-bar ">
+            <div class="todos-actions-bar_counter js-todos-actions-bar_counter" aria-label="Количество несделанных todo"></div>
+            <button class="todos-actions-bar_clear-completed js-todos-actions-bar_clear-completed">
                 Удалить завершенные
             </button>
-            <div class="todos-filters">
+            <div class="todos-filters js-todos-actions-bar_filter ">
                 <button class="todos-filter __active" data-filter="all" aria-label="Фильтр: показать все">
                     Все
                 </button>
                 <button class="todos-filter" data-filter="ready" aria-label="Фильтр: показать невыполненные">
                     Невыполненные
                 </button>
-                <button class="todos-filter __active" data-filter="unready" aria-label="Фильтр: показать выполненные">
+                <button class="todos-filter" data-filter="unready" aria-label="Фильтр: показать выполненные">
                     Выполненные
                 </button>
 

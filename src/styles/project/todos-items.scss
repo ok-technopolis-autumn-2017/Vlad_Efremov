@@ -27,8 +27,13 @@
     resize: none;
     color: $item_font-color;
     padding-left:$offset;
-
     }
+
+.todos-item.__ready .todos-item_text {
+   text-decoration: line-through;
+}
+
+
 
 .todos-item_ready-mark {
     position: relative;
@@ -76,6 +81,11 @@
     height: 4px;
     background: $icon_close_color;
 
+}
+
+//Модификатор для скрытия элемента
+.__hide{
+    display: none;
 }
 
 

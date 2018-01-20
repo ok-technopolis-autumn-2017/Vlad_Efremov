@@ -11,7 +11,7 @@ var ACTIVE_FILTER_MODIFICATOR = '__active';
 function FilterConstructor(domRoot) {
     this._initEventable();
 
-    var filters = this._filters = domRoot.querySelectorAll('.filter');
+    var filters = this._filters = domRoot.querySelectorAll('.todos-filter');
     this._currentActive = null;
 
     for (var i = filters.length; i-- ;) {

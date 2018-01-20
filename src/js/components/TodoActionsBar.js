@@ -44,8 +44,12 @@ todoActionsBarConstructorPrototype._clearCompleted = function () {
  * @return {TodoActionsBarConstructor}
  */
 todoActionsBarConstructorPrototype.setItemsCount = function (count) {
-    this._counterNodeText.nodeValue = count + ' ' + l10n.plural('todosCountLabel', count);
+    if (count != 0)
+        this._counterNodeText.nodeValue = "Количество задач: " + count;
+    else
+        this._counterNodeText.nodeValue = "";
     return this;
+
 };
 
 /**

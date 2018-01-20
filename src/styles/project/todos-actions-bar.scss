@@ -1,7 +1,11 @@
 @import "../config/global";
 .todos-actions-bar{
     overflow: auto;
+    display: none;
     }
+.todos-actions-bar.__has-todos{
+   display: block;
+}
 
 .todos-actions-bar_counter{
     background-color: $c-white;
@@ -22,4 +26,5 @@
     margin:$offset 0 $offset $offset_half;
 
     }
+
 

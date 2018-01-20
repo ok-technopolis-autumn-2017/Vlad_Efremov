@@ -4,6 +4,7 @@
     height: 40px;
     top:15%;
     margin-left: $offset_half;
+    position: absolute;
     }
 
 .input-checkbox_target{
@@ -23,7 +24,7 @@
     width: 100%;
     border-radius: 50%;
     }
-.input-checkbox::after{
+.__ready .input-checkbox::after{
     content: '';
     position: absolute;
     width: 40%;
@@ -38,7 +39,7 @@
     background: $checkbox_border-color;
 
     }
-.input-checkbox::before{
+.__ready .input-checkbox::before{
     content: '';
     position: absolute;
     width: 70%;

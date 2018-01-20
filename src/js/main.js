@@ -11,27 +11,32 @@ function init() {
     var todoMain = new TodoMain();
     var addTodos = new AddTodos();
     var todoList = new TodoList();
-
+    var todoActionsBar = new TodoActionsBar();
 
 
     addTodos
         .on('newTodo',
-            function (todoData) { todoList.createItem(todoData); }
+            function (todoData) {
+                todoList.createItem(todoData);
+            }
         )
         .on('markAsReadyAll',
-            function () { todoList.markAsReadyAll();}
+            function () {
+                todoList.markAsReadyAll();
+            }
         );
 
-    function itemsCountWatcher () {
+    function itemsCountWatcher() {
         var itemsCount = todoList.getItemsCount();
 
-        if(itemsCount!=0){
+        if (itemsCount != 0) {
             todoMain.showFullInterface();
-        }else{
+            todoActionsBar.setItemsCount(itemsCount);
+        } else {
             todoMain.hideFullInterface();
         }
 
-        todoActionsBar.setItemsCount(itemsCount);
+
     }
 
     todoList.on('itemAdd', itemsCountWatcher)
@@ -39,7 +44,9 @@ function init() {
 
     todoActionsBar.on(
         'clearCompleted',
-        function () { todoList.removeCompletedItems(); }
+        function () {
+            todoList.removeCompletedItems();
+        }
     );
 
     todoActionsBar.on('filterSelected', function (filterId) {
