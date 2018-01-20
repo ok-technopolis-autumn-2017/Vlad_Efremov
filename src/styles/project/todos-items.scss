@@ -1,0 +1,92 @@
+@import "../config/global";
+.todos-item{
+    border-top: 1px solid $item_border-color;
+    clear:both;
+    padding-top: $offset;
+    }
+
+.todos-item:hover{
+    background-color: $item_hover_bg-color;
+    }
+
+.todos-item:last-child{
+    border-bottom: 1px solid $item_border-color;
+}
+
+
+
+.todos-item_text {
+    overflow: hidden;
+    line-height: $lh-normal;
+    background: none;
+    margin-top: $offset;
+    font-size: $fs_normal;
+    font-style:normal;
+    height: 40px;
+    border: 0;
+    resize: none;
+    color: $item_font-color;
+    padding-left:$offset;
+    }
+
+.todos-item.__ready .todos-item_text {
+   text-decoration: line-through;
+}
+
+
+
+.todos-item_ready-mark {
+    position: relative;
+    margin: auto $offset_half;
+    float: left;
+    }
+
+
+.todos-item_remove {
+    width: 40px;
+    height: 40px;
+    background:none;
+    float: right;
+    }
+.todos-item_close_icon{
+    position: relative;
+}
+.todos-item_close_icon::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: 3px;
+    top:0;
+    background: $icon_close_color;
+
+}
+.todos-item_close_icon::after {
+    content: '';
+    position: absolute;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    left: 10%;
+    top:50%;
+
+    width: 20px;
+    height: 4px;
+    background: $icon_close_color;
+
+}
+
+//Модификатор для скрытия элемента
+.__hide{
+    display: none;
+}
+
+
+

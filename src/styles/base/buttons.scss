@@ -1,0 +1,11 @@
+@import "../config/global";
+button{
+    background-color: $c-white;
+    border: none;
+    color: $btn_font-color;
+
+    }
+button.__active{
+    border: 2px solid $btn_border-color;
+
+    }

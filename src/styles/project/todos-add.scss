@@ -1,0 +1,57 @@
+@import "../config/global";
+.todos-add:after {
+    content: '';
+    display: block;
+    clear: both;
+
+    }
+
+.todos-add_select-all {
+    width: 64px;
+    height: 64px;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+    position: relative;
+    
+    }
+
+
+.todos-add_select-all_icon {
+    position: absolute;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    left: 25%;
+    top:25%;
+  
+    }
+
+.todos-add_new-item-w {
+    overflow: hidden;
+    }
+
+.todos-add_new-item {
+
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    background: none;
+    color: $text-input_font-color;
+    font-size: $fs_normal;
+    line-height: $lh-normal;
+    font-weight: $c-font-weight*2;
+    padding-right: $offset;
+    margin-top: $offset;
+    outline: none;
+
+    }
+.todos-add_new-item::placeholder {
+    color: $text-input_placeholder_font-color;
+    font-style: italic;
+    }
+
