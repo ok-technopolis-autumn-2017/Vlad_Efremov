@@ -1,0 +1,33 @@
+.close_icon {
+    position: relative;
+}
+
+.close_icon::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: 3px;
+    top: 0;
+    background: #ebdfdf;
+}
+
+.close_icon::after {
+    content: '';
+    position: absolute;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    left: 10%;
+    top: 50%;
+    width: 20px;
+    height: 4px;
+    background: #ebdfdf;
+}

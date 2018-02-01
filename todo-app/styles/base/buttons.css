@@ -1,0 +1,10 @@
+button{
+    background-color: #FFFFFF;
+    border: none;
+    color: #BEBEBE;
+
+    }
+button.__active{
+    border: 2px solid #EFE6E6;
+
+    }
