@@ -29,12 +29,7 @@
     }
 
 .todos-item_ready-mark {
-    width: 40px;
-    height: 40px;
-    display: block;
     position: relative;
-    border-radius: 50px;
-    border: 1px solid #6CC8B6;
     margin: auto 5px;
     float: left;
     }
@@ -43,13 +38,8 @@
 .todos-item_remove {
     width: 42px;
     height: 60px;
-    background: #fff;
+    background:none;
     float: right;
     }
 
 
-.todos-item_close_icon {
-    background: url("../../icons/close.png");
-    width: 18px;
-    height: 18px;
-    }

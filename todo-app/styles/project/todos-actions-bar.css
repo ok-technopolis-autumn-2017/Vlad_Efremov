@@ -1,27 +1,21 @@
-.todos-actions-bar{
-    overflow: auto;
-    }
-.todos-actions-bar *{
-    margin:10px 0 10px 5px;
-    }
-.todos-actions-bar_counter{
+
+.todos-actions-bar_counter {
     background-color: #FFFFFF;
     border: none;
     color: #BEBEBE;
     float: left;
-    width: 15%;
-    }
-.todos-filters{
-    width: 50%;
-    margin: 0 auto;
-    float: left;
+    margin: 12px 0 12px 6px;
+}
 
-    }
+.todos-filters {
+    margin-top: 12px;
+    margin-left: 200px;
+    margin-right: 50px;
+    float:left;
+}
 
-.todos-actions-bar_clear-completed{
-    display: block;
-    width: 30%;
+.todos-actions-bar_clear-completed {
     float: right;
-
-    }
+    margin: 12px 0 12px 6px;
+}
 
